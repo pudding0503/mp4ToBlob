@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Hey Siri Black | Mp4 to Blob</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+        .table {
+            margin: 0px auto;
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: -100px;
+        }
+        .title {
+            text-align: right;
+            color: #efefef;
+            font-weight: 400;
+            font-family: PingFang -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .box {
+            text-align: left;
+        }
+        .video {
+            text-align: center;
+            width: 124px;
+            height: 124px;
+        }
+    </style>
+
+    <!--引入js文件-->
+    <script type="text/javascript" src="./mp4ToBlob.js"></script>
+</head>
+
+<body>
+    <table class="table" border="0">
+        <tr>
+            <td>
+                <h1 class="title">Hey Siri</h1>
+            </td>
+            <td>
+                <div class="box">
+                    <video class="video" id="video"></video>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+<!--配置参数-->
+<script>
+    var url = 'siri-black.mp4'; // 视频url
+    var mimeCodec = 'video/mp4; codecs="avc1.640028, mp4a.40.2"'; // 编码格式（一般情况默认即可）
+    Mp4ToBlob.init('#video', url, mimeCodec); // #video 是选择器id
+</script>
+
+</html>
