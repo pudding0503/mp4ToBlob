@@ -13,8 +13,8 @@
 
 ```javascript
 var url = 'siri-white.mp4'; // 视频url
-var mimeCodec = 'video/mp4; codecs="avc1.640028, mp4a.40.2"'; // 编码格式（一般情况默认即可）
-Mp4ToBlob.init('#video', url, mimeCodec); // #video 是选择器id
+var mimeCodec = 'video/mp4; codecs="avc1.640028"'; // 根据视频信息原样填写
+Mp4ToBlob.init('#video', url, mimeCodec, true); // #video是选择器id，true是autoplay开启
 ```
 
 在需要使用视频的位置，使用 `<video>` 标签并标明 `id  ` 即可：
@@ -25,6 +25,8 @@ Mp4ToBlob.init('#video', url, mimeCodec); // #video 是选择器id
 
 ### 遇到错误
 
+#### 错误一
+
 如果遇到了以下错误：
 
 > Failed to execute 'endOfStream' on 'MediaSource': The MediaSource's readyState is not 'open'.
@@ -33,11 +35,9 @@ Mp4ToBlob.init('#video', url, mimeCodec); // #video 是选择器id
 
 说明使用的 MP4 视频并不是 `fragmented` 的，需要使用 **Bento4** 工具进行转换。
 
-#### 下载 Bento4
+##### 下载 Bento4：[https://www.bento4.com/downloads/](https://www.bento4.com/downloads/)
 
-Bento4 下载地址：[https://www.bento4.com/downloads/](https://www.bento4.com/downloads/)
-
-#### 使用 Bento4
+##### 使用 Bento4
 
 需要注意的事情是，windows上的bin目录下的 exe 是需要通过命令行来运行。
 
@@ -51,6 +51,22 @@ Bento4 下载地址：[https://www.bento4.com/downloads/](https://www.bento4.com
 ```
 
 其中：`mp4fragment.exe` 是命令 ， `source.mp4` 是原视频地址 ， `new.mp4` 是要输出的视频路径。
+
+#### 错误二
+
+> MP4 视频已经是 `fragmented` 的，但是仍提示错误。
+
+说明你的 `mimeCodec` 参数没有填写正确，使用 Bento4 获取视频编码信息：
+
+```powershell
+.\mp4info.exe this.mp4
+```
+
+其中：`mp4info.exe` 是命令 ， `this.mp4` 是此视频。
+
+![错误](assets/wrong2-1.png)
+
+![错误](assets/wrong2-2.png)
 
 ### 例子
 

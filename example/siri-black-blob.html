@@ -35,7 +35,7 @@
     </style>
 
     <!--引入js文件-->
-    <script type="text/javascript" src="../mp4ToBlob.js"></script>
+    <script type="text/javascript" src="mp4ToBlob.js"></script>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
             </td>
             <td>
                 <div class="box">
-                    <video id="video" webkit-playsinline="true" controls playsinline="true" type="video/mp4"  x5-video-player-type="h5" ></video>
+                    <video class="video" id="video2" type="video/mp4" x5-video-player-type="h5" autoplay="true" muted="muted" loop></video>
                 </div>
             </td>
         </tr>
@@ -56,8 +56,8 @@
 <!--配置参数-->
 <script>
     var url = 'siri-black.mp4'; // 视频url
-    var mimeCodec = 'video/mp4; codecs="avc1.640028, mp4a.40.2"'; // 编码格式（一般情况默认即可）
-    Mp4ToBlob.init('#video', url, mimeCodec); // #video 是选择器id
+    var mimeCodec = 'video/mp4; codecs="avc1.64000D"'; // 编码格式（一般情况默认即可）
+    Mp4ToBlob.init('#video2', url, mimeCodec, true); // #video 是选择器id
 </script>
 
 </html>
