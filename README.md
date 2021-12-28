@@ -1,5 +1,5 @@
 # Mp4ToBlob
-**mp4ToBlob.js** 是一个在前端将你的 mp4 格式视频以 `blob src` 的形式展现出来。
+**mp4ToBlob.js** 是一个在前端将你的 mp4 格式视频以 `blob src` 的形式展现出来的工具。
 
 ### 使用
 
