@@ -88,4 +88,4 @@ Mp4ToBlob.init('#video', url, mimeCodec, true); // #video是选择器id，true �
 
 ### 4. 许可
 
-[MIT License](https://github.com/windmill0503/mp4ToBlob/blob/master/LICENSE)
+[MIT License](https://github.com/pudding0503/mp4ToBlob/blob/master/LICENSE)
