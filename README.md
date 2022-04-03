@@ -82,9 +82,9 @@ Mp4ToBlob.init('#video', url, mimeCodec, true); // #video是选择器id，true �
 
 还可以直接点击此链接进行在线预览：
 
-+ [Siri Blob 白色演示页面](demo/mp4-to-blob/siri-white-blob.html)
++ [Siri Blob 白色演示页面](demo/siri-white-blob.html)
 
-+ [Siri Blob 黑色演示页面](demo/mp4-to-blob/siri-black-blob.html)
++ [Siri Blob 黑色演示页面](demo/siri-black-blob.html)
 
 ### 4. 许可
 
