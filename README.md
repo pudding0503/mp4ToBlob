@@ -78,13 +78,13 @@ Mp4ToBlob.init('#video', url, mimeCodec, true); // #video是选择器id，true �
 
 ### 3.例子
 
-在 `/example` 下有一个样例，需要注意的是必须要在服务器上才能表现出来，你需要搭建本地服务器或者上传至网络服务器。
+在 `/demo` 下有一个样例，需要注意的是必须要在服务器上才能表现出来，你需要搭建本地服务器或者上传至网络服务器。
 
 还可以直接点击此链接进行在线预览：
 
-+ [Siri Blob 白色演示页面](https://github.nousbuild.com/demo/mp4-to-blob/siri-white-blob.html)
++ [Siri Blob 白色演示页面](demo/mp4-to-blob/siri-white-blob.html)
 
-+ [Siri Blob 黑色演示页面](https://github.nousbuild.com/demo/mp4-to-blob/siri-black-blob.html)
++ [Siri Blob 黑色演示页面](demo/mp4-to-blob/siri-black-blob.html)
 
 ### 4. 许可
 
